@@ -1,6 +1,3 @@
-// this code is pretty hacky because i've never done anything like this before. bare with me. [if it works, it works :shrug:]
-
-
 (function ($) {
     let f
     const selectables = function(obj) {
@@ -46,6 +43,8 @@
                 emojis.forEach(e => {
                     let category = e.category.toLowerCase()
                     let finalcat = "objects"
+
+                    if (e.description == "eye in speech bubble") e.emoji = "👁‍🗨"
 
                     if (category.includes("people & body")) finalcat = "peoples"
                     if (category.includes("smileys & emotion")) finalcat = "smileys"
