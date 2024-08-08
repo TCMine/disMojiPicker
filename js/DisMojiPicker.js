@@ -1,3 +1,5 @@
+// this code is pretty hacky because i've never done anything like this before. bare with me. [if it works, it works :shrug:]
+
 (function ($) {
     let f
     const selectables = function(obj) {
